@@ -104,4 +104,15 @@ public class Flight {
     public int hashCode() {
         return Objects.hash(flightId, flightNumber, aircraft, totalAircraftSeats, flightMileage);
     }
+
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "flightId=" + flightId +
+                ", flightNumber='" + flightNumber + '\'' +
+                ", aircraft='" + aircraft + '\'' +
+                ", totalAircraftSeats=" + totalAircraftSeats +
+                ", flightMileage=" + flightMileage +
+                '}';
+    }
 }

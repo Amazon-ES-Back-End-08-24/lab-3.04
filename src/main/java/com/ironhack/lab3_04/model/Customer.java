@@ -92,4 +92,14 @@ public class Customer {
     public int hashCode() {
         return Objects.hash(customerId, customerName, customerStatus, totalCustomerMileage);
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerId=" + customerId +
+                ", customerName='" + customerName + '\'' +
+                ", customerStatus=" + customerStatus +
+                ", totalCustomerMileage=" + totalCustomerMileage +
+                '}';
+    }
 }

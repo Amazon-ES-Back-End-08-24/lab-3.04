@@ -65,4 +65,13 @@ public class FlightBooking {
     public int hashCode() {
         return Objects.hash(bookingId, customer, flight);
     }
+
+    @Override
+    public String toString() {
+        return "FlightBooking{" +
+                "bookingId=" + bookingId +
+                ", customer=" + customer +
+                ", flight=" + flight +
+                '}';
+    }
 }
